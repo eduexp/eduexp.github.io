@@ -6,75 +6,29 @@
 <title>My Website</title>
 
 <style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-        background: #000;
-    }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
 
-    .topbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 50px;
-        background: rgba(0,0,0,0.8);
-        color: white;
-        display: flex;
-        align-items: center;
-        padding: 0 15px;
-        z-index: 10;
-        box-sizing: border-box;
-    }
-
-    .topbar h1 {
-        font-size: 16px;
-        margin: 0;
-        font-weight: normal;
-    }
-
-    .topbar a {
-        margin-left: auto;
-        color: white;
-        text-decoration: none;
-        border: 1px solid rgba(255,255,255,0.3);
-        padding: 6px 12px;
-        border-radius: 6px;
-        font-size: 13px;
-    }
-
-    iframe {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 50px);
-        border: none;
-        background: white;
-    }
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <h1>My Website</h1>
-    <a id="openBtn" href="#" target="_blank">Open Original</a>
-</div>
-
-<!-- CHANGE THIS URL -->
-<iframe id="siteFrame" src="https://itzyou.com/experiment/"></iframe>
-
-<script>
-    const targetURL = "https://itzyou.com/experiment/"; // CHANGE THIS
-
-    document.getElementById("siteFrame").src = targetURL;
-    document.getElementById("openBtn").href = targetURL;
-</script>
+<!-- CHANGE THIS -->
+<iframe src="https://itzyou.com/experiment/"></iframe>
 
 </body>
 </html>
